@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Publications</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">< Main Page</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="education.html">Education</a></li>
+						<li><a href="workexperience.html">Work Experience</a></li>
+						<li><a href="publications.html" class="active">Publications</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Research and Articles</h1>
+							<span class="image fit"><img src="images/Publications.jpg" alt="" /></span>
+
+							<style>
+							.btn {
+							  background-color: ForestGreen;
+							  border: none;
+							  color: white;
+							  height: 100px;
+							  padding: 2px 20px;
+							  cursor: pointer;
+							  font-size: 16px;
+							}
+
+							/* Darker background on mouse-over */
+							.btn:hover {
+							  background-color: DarkGreen;
+							}
+							</style>			
+
+
+							<ul> 
+													
+ 							<p><li  style="font-size:1.5vw"><b>A Computational Framework for Assessment of Fuel Sloshing Effects on Transonic Wing Flutter Characteristics</b></li>
+ 							<b>Abstract:</b> <i>The present study focuses on the development and application of a computational framework for assessing the effects of fuel sloshing in internal fuel tanks on the aeroelastic characteristics of aircraft wing configurations. The framework couples an open source compressible flow solver for external aerodynamics, a structural solver for computing the structural motion/deformation and an open source Volume of Fluid (VOF) solver for fuel sloshing in internal wing fuel tanks. As time domain flutter solution of these coupled solvers is computationally expensive, a reduced order model (ROM) is developed for prediction of sloshing loads based on structural inputs. The aim of the ROM is to efficiently describe the dominant static and dynamic characteristics of the underlying system by employing radial basis function neural networks (RBF-NN) to train the dynamic relationship between the structural motions and resulting sloshing loads. A limited CFD-based data is exploited to calibrate the ROM. Hence, a specially designed structural input is required to efficiently capture all the relevant dynamics of the system. A white-noise random signal-based input design method is developed and utilized for the same purpose. The flutter boundary is compared for clean wing section with and without internal fuel tank for different fill levels. The computational framework applied to a wing section with an internal tank has demonstrated promising results motivating feasibility of an extension to a three-dimensional wing with an internal fuel tank.</i></p>
+ 							<button class="btn"><i class="fa fa-download" ></i> <a href="downloadables/Shashank_SciTech_Publication.pdf" target="popup">Download</a></button>
+
+ 							<p><li  style="font-size:1.5vw"><b>Models for Predicting Transonic Flutter of a Wing-Section with Sloshing in an Embedded Fuel Tank</b></li>
+ 							<b>Abstract:</b> <i>The present study focuses on the development, application, and comparison of three computational frameworks of varying fidelities for assessing the effects of fuel sloshing in internal fuel tanks on the aeroelastic characteristics of a wing section. The first approach uses the coupling of compressible flow solver for external aerodynamics integrated with structural solver and incompressible multiphase flow solver for fuel sloshing in the embedded fuel tank As time-domain flutter solution of these coupled solvers is computationally expensive, two approximate surrogate models to emulate sloshing flows are considered. One surrogate model utilizes a linearised approach for sloshing load computations by creating an Equivalent Mechanical System (EMS) with its parameters derived from potential flow theory. The other surrogate model aims to efficiently describe the dominant dynamic characteristics of the underlying system by employing the Radial Basis Function Neural Networks (RBF-NN) using limited CFD-based data to calibrate this model. The flutter boundaries of a wing section with and without the effects of fuel sloshing are compared. The limitation of the EMS surrogate to represent nonlinearities are reflected in this study. The RBF-NN surrogate shows remarkable agreement with the high-fidelity solution for sloshing with significantly low computational cost, thereby motivating extension to three-dimensional problems.</i></p>
+  							<button class="btn"><i class="fa fa-download" ></i> <a href="downloadables/Shashank_Aeroelastic_Models.pdf" target="popup">Download</a></button>
+							
+ 							<p><li  style="font-size:1.5vw"><b>Machine Learning Surrogates for Predicting Response of an Aero-Structural-Sloshing System</b></li>
+ 							<b>Abstract:</b> <i>This study demonstrates the feasibility of developing machine learning (ML) surrogates based on Recurrent Neural Networks (RNN) for predicting the unsteady aeroelastic response of transonic pitching and plunging wing-fuel tank sloshing system by considering an approximate simplified model of an airfoil in transonic flow and sloshing loads from a partially filled fuel tank rigidly embedded inside the airfoil and undergoing a free unsteady motion. The ML surrogates are then used to predict the aeroelastic response of the coupled system. The external aerodynamic loads on the airfoil and the two-phase sloshing loads data for training the RNN are generated using open-source computational fluid dynamics (CFD) codes. The aerodynamic force and moment coefficients are predicted from the surrogate model based on its motion history. Similarly, the lateral and vertical forces and moments from fuel sloshing in the fuel tank are predicted using the surrogate model resulting from the motion of the embedded fuel tank. Comparing the free motion of the airfoil without sloshing tank to the free motion of the airfoil with a partially-filled fuel tank shows that the effects of sloshing on the aeroelastic motion of the aero-structural system. The effectiveness of the predictions from RNN are then assessed by comparing with the results from the high-fidelity coupled aero-structural-fuel tank sloshing simulations. It is demonstrated that the surrogate models can accurately and economically predict the coupled aero-structural motion.</i></p>
+  							<button class="btn"><i class="fa fa-download" ></i> <a href="downloadables/Shashank_MachineLearning.pdf" target="popup">Download</a></button>
+
+ 							<p><li  style="font-size:1.5vw"><b>Efficiency Enhancement of Aeroelastic Optimization Process Using Parametric Reduced-Order Modeling</b></li>
+ 							<b>Abstract:</b> <i>In this work, to demonstrate the efficiency of model reduction in design optimization, a parametric reduced-order model (PROM) was adopted in conjunction with an aeroelastic optimization process. Flutter speed was chosen as an objective function, and structural properties (material density, Young’s modulus, and Poisson’s ratio) as well as fluid properties (air density) were defined as the design variables. The flutter calculation was performed for a Goland wing, using finite-element modeling for the structure and the vortex lattice method for the aerodynamic part. A gradient-based optimization technique and a global optimization method were used to seek a maximum flutter speed. Comparison of optimization results from the full-order model (FOM) and PROM shows that the proposed optimization process yields the same optimum flutter speed as the FOM and yet reduces the computation time significantly, by up to a factor of four.</i></p>
+   							<button class="btn"><i class="fa fa-download" ></i> <a href="downloadables/Shashank_PROM.pdf" target="popup">Download</a></button>
+
+ 							<p><li  style="font-size:1.5vw"><b>Flutter Optimization Using Parametric Reduced Order Aeroelastic Model</b></li>
+ 							<b>Abstract:</b> <i>In this paper, optimization is performed on an aeroelastic system for a maximum flutter speed within feasible limits of structural design variables material density, Young’s modulus and Poisson’s ratio and aerodynamic parameters (air density). The aeroelastic model under consideration is Goland wing described by finite element analysis and unsteady vortex lattice method. Gradient based optimization technique and global optimization method are used to seek for the maximum flutter speed. A parametric reduced order model (PROM) is generated using the parametric reduced order modeling technique developed previously by Kim and optimum results are compared against those of the full order model (FOM). It is shown that the optimization based on PROM results in 76.43% reduction in CPU time and yet yields the same optimum flutter result as the FOM.</i></p>
+    						<button class="btn"><i class="fa fa-download" ></i> <a href="downloadables/Shashank_Optimization.pdf" target="popup">Download</a></button>
+
+							</ul>
+
+
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
